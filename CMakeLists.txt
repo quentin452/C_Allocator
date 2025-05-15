@@ -17,13 +17,13 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Collect all .cpp and *.h source files in the current directory
-file(GLOB SOURCES "${CMAKE_SOURCE_DIR}/*.cpp" "${CMAKE_SOURCE_DIR}/*.h")
+file(GLOB SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/*.h")
 
 # Add subdirectories to include path
 include_directories( 
-    ${CMAKE_SOURCE_DIR}/Allocator
-    ${CMAKE_SOURCE_DIR}/Examples
-    ${CMAKE_SOURCE_DIR}/Port
+    ${CMAKE_CURRENT_SOURCE_DIR}/Allocator
+    ${CMAKE_CURRENT_SOURCE_DIR}/Examples
+    ${CMAKE_CURRENT_SOURCE_DIR}/Port
 )
 
 # Add an executable target
